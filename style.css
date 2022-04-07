@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+header {
+    height: 150px;
+    padding-top: 32px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.top_head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+.top_left,
+.top_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.title_logo {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 58px;
+    color: #222222;
+    padding-left: 13px;
+}
+
+.title_logo span {
+    color: #f16d7f;
+    font-weight: 600;
+}
+
+.account {
+    display: block;
+    color: #fff;
+    background-color: #f16d7f;
+    padding: 15px 30px;
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 32px;
+    border: 1px solid transparent;
+}
+
+.account:hover {
+    border: 1px solid #f16d7f;
+    color: #f16d7f;
+    background-color: #fff;
+}
+
+hr {
+    opacity: 0.3;
+}
+
+.menu {
+    text-align: center;
+    margin-top: 22px
+}
+
+.menu_pages {
+    padding: 25px;
+    color: #222222;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.photo_mainer {
+    background-color: #e8e8e8;
+    height: 613px;
+}
+
+.photo_main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.div_main_img,
+.main_img {
+    height: 100%;
+}
+
+.main_img {}
+
+.main_title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+}
+
+.main_title p {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.main_title p span {
+    color: #f16d7f;
+}
+
+.mainer_title {
+    display: flex;
+    align-items: center;
+}
+
+
+.photo_sales {
+    padding-top: 100px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.item {
+    padding: 10px;
+    position: relative;
+}
+
+.capt_item {
+    position: absolute;
+    background-color: #fff;
+    top: 28px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222;
+    padding: 15px;
+}
+
+.capt_item p {
+    color: #F16D7F;
+    font-size: 25px;
+    padding-top: 10px; 
+    font-weight: 800;
+    
+}
