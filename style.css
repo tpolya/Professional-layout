@@ -69,10 +69,20 @@ header {
     background: linear-gradient(180deg, #f9f9f9, #f5f5f5);
     border: 1px solid #e6e6e6;
     width: 85px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 7px 0 0 7px;
+    padding-left: 8px;
+}
+
+summary {
+    display: block;
+    padding-top: 8px;
+    width: 80px;
+}
+
+summary::after {
+    content: "\25BC";
+    padding-left: 0.5em;
+    color: #838383;
 }
 
 .input {
@@ -129,21 +139,37 @@ hr {
     font-weight: 700;
     font-size: 15px;
 }
+
 .menu_pages:hover .mega_box {
     display: flex;
 }
 
-.mega_box {
+.mega_box,
+.mega_boxx {
     position: absolute;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     border: 1px solid #e8e8e8;
     top: 52px;
+    z-index: 100;
+}
+
+.mega_boxx {
+    top: 75px;
+}
+
+.mega_itemm {
+    margin-right: 0;
+    padding-bottom: 10px;
+}
+
+.mega_box {
     display: none;
 }
-.mega_box:before{
-    content:"";
+
+.mega_box:before {
+    content: "";
     background: #fff;
     width: 10px;
     height: 10px;
@@ -159,8 +185,9 @@ hr {
     text-align: start;
     margin-right: 32px;
 }
-.mega_item:last-of-type{
-    margin-right:0;
+
+.mega_item:last-of-type {
+    margin-right: 0;
 }
 
 .menu_items {
@@ -170,7 +197,7 @@ hr {
 .mega_title {
     text-transform: uppercase;
     color: #232323;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 14px;
     font-weight: 700;
     border-bottom: 1px solid #e8e8e8;
@@ -179,19 +206,20 @@ hr {
 }
 
 .menu_items {
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 14px;
     font-weight: 400;
     line-height: 38px;
     color: #222222;
 }
+
 .last:hover .mega_box {
     right: 0;
     left: auto;
 }
 
 .last:hover .mega_box:before {
-    right:  88px;
+    right: 88px;
     left: auto;
 }
 
@@ -211,8 +239,6 @@ hr {
 .main_img {
     height: 100%;
 }
-
-.main_img {}
 
 .main_title {
     font-family: 'Lato';
@@ -242,7 +268,7 @@ hr {
 
 .photo_sales {
     padding-top: 100px;
-    height: 1000px;
+    height: 850px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -272,4 +298,268 @@ hr {
     padding-top: 10px;
     font-weight: 800;
 
+}
+
+.section_text {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.the_brand {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 58px;
+    color: #222222;
+
+}
+
+.section_info {
+    color: #b9b9b9;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.card {
+    width: 263px;
+    position: relative;
+    margin-bottom: 40px;
+
+}
+
+.card:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+.card_link {
+    display: block;
+}
+
+.card_info {
+    color: #222222;
+    font-family: 'Lato';
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card_price {
+    color: #f16d7f;
+    padding-top: 10px;
+}
+
+.card_info {
+    padding: 20px;
+}
+
+.img_card {
+    width: 100%;
+}
+
+.sec_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card:hover .img_card {
+    filter: brightness(50%);
+
+}
+
+.card:hover .link_sec {
+    display: flex;
+
+}
+
+.add_to_cart {
+    color: #fff;
+    font-family: 'Lato';
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.cart_link {
+    display: flex;
+    padding: 8px;
+    border: 0.5px solid #fff;
+    pointer-events: all;
+    align-items: center;
+}
+
+.link_sec {
+    display: none;
+    position: absolute;
+    top: 98px;
+    justify-content: center;
+    width: 100%;
+    pointer-events: none;
+}
+
+.cart_link:hover {
+    box-shadow: 0 0 10px #fff;
+}
+
+.top_footer {
+    background-color: #e6e6e6;
+    position: relative;
+}
+
+.top_foot {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.img_top_footer {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    position: relative;
+}
+
+.article {
+    display: flex;
+    padding-right: 170px;
+}
+
+.article_info {
+    width: 380px;
+    padding: 10px;
+}
+
+.quote {
+    width: 100%;
+    font-weight: 600;
+    color: #222222;
+    font-family: 'Lato';
+    font-size: 13px;
+    font-style: italic;
+
+}
+
+.woman_name {
+    color: #f16d7f;
+    width: 100%;
+    font-family: 'Lato';
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.subscribe {
+    text-align: center;
+}
+
+.title_subscribe {
+    font-family: 'Lato';
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.title_subscribe p {
+    font-size: 10px;
+    letter-spacing: normal;
+    padding-top: 15px;
+}
+
+.input_subscribe {
+    display: flex;
+    padding-top: 40px;
+}
+
+.sub_input {
+    width: 280px;
+    border: none;
+    background-color: #e1e1e1;
+    border-radius: 25px 0 0 25px;
+    padding-left: 25px;
+}
+
+.subscribe_btm {
+    display: block;
+    background-color: #f16d7f;
+    color: #fff;
+    width: auto;
+    padding: 15px;
+    font-family: 'Lato';
+    font-size: 13px;
+   border-radius: 0 25px 25px 0;
+}
+
+.footer_main {
+    background-color: #fff;
+    display: flex;
+    flex: auto;
+    padding-top: 110px;
+    padding-bottom: 75px;
+}
+.footer_main_left {
+    flex: 1;
+}
+.footer_main_info {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 15px;
+    color: #7a7a7a;
+    width: 430px;
+    padding-top: 30px; 
+}
+.title_links {
+    text-transform: uppercase;
+    color: #f16d7f;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.footer_main_right {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+.footer {
+    position: relative;
+}
+.links {
+    width: 100%;
+}
+.footer_bottom {
+    background-color: #e6e6e6;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+}
+.footer_links {
+    display: block;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 38px;
+    color: #222222;
+}
+
+.left_footer {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 15px;
+    color: #7a7a7a;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
